@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #0b2c4d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    height: 80vh;
+    background: url("bra.jpg") center/cover no-repeat;
+    color: rgb(230, 233, 238);
+    padding: 120px 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+.hero p{
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f4a100;
+    padding: 10px 20px;
+    color: #000;
+    margin-top: 20px;
+    text-decoration: none;
+
+
+    
+}
+
+.services-preview {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+}
+
+.service-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+.page-header {
+    color: #000000;
+    padding: 60px 40px;
+    text-align: center;
+    background: transparent; /* IMPORTANT */
+}
+
+@media (max-width: 768px) {
+    .services-list {
+        flex-direction: column;
+        padding: 0 20px 40px;
+    }
+
+    .page-header {
+        padding: 40px 20px;
+    }
+}
+
+    
+
+.content {
+    padding: 40px;
+    line-height: 1.7;
+    
+}
+
+.services-list {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px 40px;
+}
+
+
+/* ============================= */
+/* SERVICES PAGE BACKGROUND */
+/* ============================= */
+
+
+.body{
+
+    background: url("hero.jpg") center / cover no-repeat;
+    padding: 60px 30px;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.services-page {
+    background: url("hero.jpg") center / cover no-repeat;
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Dark overlay so text is readable */
+.services-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+/* Ensure content appears above overlay */
+.services-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+nav a.active {
+    border-bottom: 3px solid #f4a100;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* ============================= */
+/* PROJECTS PAGE BACKGROUND */
+/* ============================= */
+
+.projects-page {
+    background: url("spring.jpg") center / cover no-repeat fixed;
+    padding: 60px 0;
+    position: relative;
+    color: #fff;
+
+}
+
+/* Dark overlay */
+.projects-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+/* Keep content above overlay */
+.projects-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+.projects-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 0 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 40px 60px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+    color: #0b2c4d;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #444;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .projects-intro {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .projects-grid {
+        padding: 0 20px 40px;
+    }
+}
+
+.about-section {
+    background: linear-gradient(
+        rgba(11, 44, 77, 0.85),
+        rgba(11, 44, 77, 0.85)
+    ),
+    url("hero.jpg") center/cover no-repeat;
+
+    padding: 100px 40px;
+    color: #fff;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+.about-content p {
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.about-content h3 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #f0c040;
+}
+
+.ceo-section {
+    padding: 80px 40px;
+    background: #fbfbfb;
+    color: #dba665;
+    
+}
+
+.ceo-container {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    gap: 40px;
+}
+
+.ceo-container img {
+    width: 260px;
+    border-radius: 10px;
+}
+
+.ceo-text h2 {
+    margin-bottom: 15px;
+    color: #0b2c4d;
+}
+
+.team {
+    padding: 80px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.team-card {
+    text-align: center;
+    color: rgb(35, 72, 30);
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-section {
+    padding: 100px 20px;
+    background: linear-gradient(
+        rgba(11, 44, 77, 0.9),
+        rgba(11, 44, 77, 0.9)
+    ),
+    url("board.jpg") center/cover no-repeat;
+}
+
+.contact-container {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 10px;
+    color: #0b2c4d;
+}
+
+.contact-container p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    height: 130px;
+    resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0b2c4d;
+    outline: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    background: #0b2c4d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #083057;
+}
+
+.success {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 30px 20px;
+    }
+}
+
+

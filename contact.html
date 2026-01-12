@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Springfield Ltd</title>
+    <!-- Include your CSS here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header content (from header.php) -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Springfield Ltd Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you. Get in touch with our team.</p>
+
+            <form method="post" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- Success message placeholder (you can handle this with JS if using static hosting) -->
+            <p class="success" style="display:none;">Message sent successfully.</p>
+
+        </div>
+    </section>
+
+    <!-- FOOTER INCLUDE -->
+<div id="footer"></div>
+
+<script>
+/* Load header & footer (PHP include replacement) */
+fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>
+

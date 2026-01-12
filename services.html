@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Springfield Ltd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header content (from header.php) -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Springfield Ltd Logo"></a>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Services Page -->
+    <section class="page-header">
+        <h1>Our Services</h1>
+    </section>
+
+    <section class="body">
+        <div class="services-page">
+
+            <section class="services-list">
+                <div class="service-box">
+                    <h3>Exploration & Production</h3>
+                    <p>
+                        Seismic studies, drilling, and hydrocarbon production.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Oilfield Services</h3>
+                    <p>
+                        Engineering support, equipment supply, and maintenance.
+                    </p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Logistics & Storage</h3>
+                    <p>
+                        Marine logistics, fuel storage, and transportation.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- FOOTER INCLUDE -->
+<div id="footer"></div>
+
+<script>
+/* Load header & footer (PHP include replacement) */
+fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>

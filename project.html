@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - Springfield Ltd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header content (from header.php) -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Springfield Ltd Logo"></a>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects Page Content -->
+    <div class="projects-page">
+
+        <section class="page-header">
+            <h1>Our Projects</h1>
+        </section>
+
+        <section class="projects-intro">
+            <p>
+                We have successfully executed major upstream and downstream
+                projects across Ghana and the West African sub-region.
+            </p>
+        </section>
+
+        <section class="projects-grid">
+            <div class="project-card reveal">
+                <h3>Offshore Oil Exploration</h3>
+                <p>Deep-water exploration and production operations in Ghana.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <h3>Fuel Storage Terminal – Tema</h3>
+                <p>High-capacity petroleum storage and distribution facility.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <h3>Marine Logistics – Takoradi</h3>
+                <p>Offshore supply, marine transport, and vessel support services.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER INCLUDE -->
+<div id="footer"></div>
+
+<script>
+/* Load header & footer (PHP include replacement) */
+fetch("header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+fetch("footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
+
+</body>
+</html>
