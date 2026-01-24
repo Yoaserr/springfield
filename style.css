@@ -633,6 +633,36 @@ header.sticky {
     }
 }
 
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;            /* only show on mobile */
+    flex-direction: column;
+    gap: 4px;                 /* smaller gap */
+    cursor: pointer;
+    z-index: 1100;            /* above content */
+}
+
+.hamburger div {
+    width: 20px;              /* smaller width */
+    height: 2.5px;            /* thinner bars */
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger animation when active */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
@@ -694,5 +724,6 @@ header.sticky {
         z-index: 1100;
     }
 }
+
 
 
