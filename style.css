@@ -321,22 +321,3 @@ nav {
   border: 1px solid #ccc;
 }
 
-.contact-form button {
-  width: 100%;
-  padding: 14px;
-  background: #0b2c4d;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-}
-
-/* Mobile menu default (hidden) */
-.nav-links {
-  pointer-events: none;   /* 👈 KEY LINE */
-}
-
-/* When menu is open */
-.nav-links.show {
-  pointer-events: auto;
-}
-
