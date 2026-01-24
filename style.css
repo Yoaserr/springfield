@@ -17,6 +17,12 @@ header {
     padding: 15px 40px;
 }
 
+.logo img {
+    height: 50px; /* adjust as needed */
+    width: auto;
+}
+
+
 nav ul {
     list-style: none;
     display: flex;
@@ -531,3 +537,4 @@ header {
     display: flex;
   }
 }
+
