@@ -330,6 +330,13 @@ nav {
   border-radius: 6px;
 }
 
+/* Mobile menu default (hidden) */
+.nav-links {
+  pointer-events: none;   /* 👈 KEY LINE */
+}
 
-
+/* When menu is open */
+.nav-links.show {
+  pointer-events: auto;
+}
 
