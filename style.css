@@ -1,4 +1,8 @@
 * {
+    html {
+    font-size: 16px;
+}
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,10 +32,25 @@ nav ul li a {
 }
 
 .hero {
-    height: 80vh;
+    min-height: 70vh;
     background: url("bra.jpg") center/cover no-repeat;
     color: rgb(230, 233, 238);
-    padding: 120px 40px;
+    padding: 100px 40px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+        min-height: auto;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* ≈ 36px */
+    }
+
+    .hero p {
+        font-size: 1.05rem; /* readable */
+    }
 }
 
 .hero h1 {
@@ -389,10 +408,41 @@ nav a.active {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .btn {
+        padding: 14px 22px;
+        font-size: 1rem;
+    }
+}
+
+
 @media (max-width: 600px) {
     .contact-container {
         padding: 30px 20px;
     }
 }
 
+/* ============================= */
+/* GLOBAL MOBILE FONT FIX */
+/* ============================= */
+@media (max-width: 768px) {
+    html {
+        font-size: 18px; /* boosts all text */
+    }
+
+    body {
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 1rem; /* 18px due to html font-size */
+    }
+
+    .projects-intro,
+    .about-content p {
+        font-size: 1.05rem;
+    }
+}
 
