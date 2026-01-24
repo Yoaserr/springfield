@@ -2,12 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector("nav ul");
 
-    menuToggle.onclick = () => {
-        navLinks.classList.toggle("show"); // show/hide menu
-        menuToggle.classList.toggle("active"); // animate hamburger
-    };
-});
-
+ 
 
     // Sticky header
     const nav = document.querySelector("header");
@@ -35,4 +30,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
 
