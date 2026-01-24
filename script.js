@@ -4,16 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!hamburger || !navLinks) return;
 
+  // ✅ Force closed state on load
+  navLinks.classList.remove("show");
+  hamburger.classList.remove("active");
+
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("show");
     hamburger.classList.toggle("active");
-  });
-
-  // Optional: close menu when a link is clicked
-  document.querySelectorAll(".nav-links a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("show");
-      hamburger.classList.remove("active");
-    });
   });
 });
