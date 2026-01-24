@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Website loaded");
-    
 
-    // Example interaction
+    // Sticky header
     const nav = document.querySelector("header");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 50) {
@@ -11,22 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
             nav.classList.remove("sticky");
         }
     });
-});
 
-document.querySelector(".menu-toggle").onclick = () => {
-    document.querySelector("nav ul").classList.toggle("show");
-};
+    // Hamburger menu toggle
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector("nav ul");
+    menuToggle.onclick = () => {
+        navLinks.classList.toggle("show");
+    };
 
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".reveal").forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-            el.classList.add("active");
-        }
+    // Reveal animations
+    window.addEventListener("scroll", () => {
+        document.querySelectorAll(".reveal").forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+                el.classList.add("active");
+            }
+        });
     });
 });
-
-
-
-
-
-
