@@ -330,3 +330,10 @@ nav {
   border-radius: 6px;
 }
 
+.hamburger {
+  z-index: 2000;
+  position: relative;
+}
+
+
+
