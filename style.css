@@ -2,6 +2,11 @@
     html {
     font-size: 16px;
 }
+    html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
     margin: 0;
     padding: 0;
@@ -646,6 +651,7 @@ header.sticky {
         display: flex;               /* show hamburger on mobile */
     }
 }
+
 
 
 
