@@ -459,26 +459,6 @@ header {
 }
 
 
-
 nav a.active {
     border-bottom: 3px solid #f4a100;
 }
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        display: none;
-    }
-
-    nav ul.show {
-        display: block;
-    }
-
-    .services-list {
-        flex-direction: column;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-}
-
