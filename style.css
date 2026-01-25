@@ -368,6 +368,12 @@ header {
     font-weight: bold;
 }
 
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 30px 20px;
+    }
+}
+
 .ceo-section {
     padding: 80px 40px;
     background: #fbfbfb;
@@ -409,5 +415,6 @@ header {
     width: 100%;
     border-radius: 10px;
 }
+
 
 
