@@ -89,6 +89,7 @@ nav {
     height: 100vh;
     width: 220px;
     background: #0b2c4d;
+    display: flex;
     flex-direction: column;
     padding-top: 80px;
     transform: translateX(100%);
@@ -98,6 +99,7 @@ nav {
 
   .nav-links.show {
     transform: translateX(0);
+
   }
 
   .nav-links li {
@@ -320,4 +322,5 @@ nav {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+
 
