@@ -69,6 +69,13 @@ header {
   border-bottom: 3px solid #f4a100;
 }
 
+/* Navigation link hover */
+.nav-links li a:hover {
+    color: #f4a100;  /* Yellow color on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -483,4 +490,5 @@ header {
 nav a.active {
     border-bottom: 3px solid #f4a100;
 }
+
 
