@@ -417,4 +417,50 @@ header {
 }
 
 
+.services-list {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px 40px;
+}
+
+
+/* ============================= */
+/* SERVICES PAGE BACKGROUND */
+/* ============================= */
+
+
+.body{
+
+    background: url("hero.jpg") center / cover no-repeat;
+    padding: 60px 30px;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.services-page {
+    background: url("hero.jpg") center / cover no-repeat;
+    padding: 60px 0;
+    position: relative;
+}
+
+/* Dark overlay so text is readable */
+.services-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+/* Ensure content appears above overlay */
+.services-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+nav a.active {
+    border-bottom: 3px solid #f4a100;
+}
 
