@@ -4,36 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Springfield Ltd</title>
-    <!-- Include your CSS here -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header content (from header.php) -->
-    <header>
-         <div class="logo">
-    <a href="index.html">
-      <img src="logo.jpg" alt="Springfield Logo">
-    </a>
-  </div>
-<nav>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="project.html">Projects</a></li>
-    <li><a href="team.html">Our Team</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<!-- Header dynamically loaded -->
+<div id="header"></div>
 
-  <div class="hamburger">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</nav>
-    </header>
-
+<main>
     <section class="contact-section">
         <div class="contact-container">
 
@@ -44,31 +27,18 @@
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
 
-            <!-- Success message placeholder (you can handle this with JS if using static hosting) -->
+            <!-- Success message placeholder -->
             <p class="success" style="display:none;">Message sent successfully.</p>
 
         </div>
     </section>
+</main>
 
-    <!-- FOOTER INCLUDE -->
+<!-- Footer dynamically loaded -->
 <div id="footer"></div>
-
-<script>
-/* Load header & footer (PHP include replacement) */
-fetch("header.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("header").innerHTML = data);
-
-fetch("footer.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("footer").innerHTML = data);
-</script>
 
 </body>
 </html>
-
-
-
