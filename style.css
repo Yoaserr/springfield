@@ -331,3 +331,32 @@ nav {
 .nav-links {
   background: lime !important;
 }
+
+.nav-links {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    background: #0b2c4d;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.show {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
