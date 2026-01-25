@@ -323,4 +323,8 @@ nav {
   border: 1px solid #ccc;
 }
 
+.hamburger {
+  outline: 3px solid red !important;
+}
+
 
