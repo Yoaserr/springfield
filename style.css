@@ -485,4 +485,21 @@ nav a.active {
 }
 
 
+/* Make the services page background cover the full viewport */
+.services-page {
+    background: linear-gradient(rgba(11,44,77,.85), rgba(11,44,77,.85)),
+                url("images/your-background.jpg") center/cover no-repeat;
+    min-height: 100vh;  /* ensures it fills the viewport */
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px; /* adjust as needed */
+    color: #fff; /* if you want white text */
+}
 
+/* Ensure the services-list is spaced nicely */
+.services-list {
+    display: flex;
+    flex-direction: column; /* stack on mobile, flex row on desktop if needed */
+    gap: 20px;
+    flex: 1; /* expands to fill space inside services-page */
+}
