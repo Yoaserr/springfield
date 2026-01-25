@@ -4,83 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Springfield Ltd</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Header content (from header.php) -->
-    <header>
-        <div class="logo">
-    <a href="index.html">
-      <img src="logo.jpg" alt="Springfield Logo">
-    </a>
-  </div>
-    <nav>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="project.html">Projects</a></li>
-    <li><a href="team.html">Our Team</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="hamburger">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-    </nav>
-    </header>
+<!-- Header dynamically loaded -->
+<div id="header"></div>
 
+<main>
     <!-- Services Page -->
     <section class="page-header">
         <h1>Our Services</h1>
     </section>
 
-    <section class="body">
-        <div class="services-page">
+    <section class="services-page">
+        <section class="services-list">
+            <div class="service-box">
+                <h3>Exploration & Production</h3>
+                <p>
+                    Seismic studies, drilling, and hydrocarbon production.
+                </p>
+            </div>
 
-            <section class="services-list">
-                <div class="service-box">
-                    <h3>Exploration & Production</h3>
-                    <p>
-                        Seismic studies, drilling, and hydrocarbon production.
-                    </p>
-                </div>
+            <div class="service-box">
+                <h3>Oilfield Services</h3>
+                <p>
+                    Engineering support, equipment supply, and maintenance.
+                </p>
+            </div>
 
-                <div class="service-box">
-                    <h3>Oilfield Services</h3>
-                    <p>
-                        Engineering support, equipment supply, and maintenance.
-                    </p>
-                </div>
-
-                <div class="service-box">
-                    <h3>Logistics & Storage</h3>
-                    <p>
-                        Marine logistics, fuel storage, and transportation.
-                    </p>
-                </div>
-            </section>
-
-        </div>
+            <div class="service-box">
+                <h3>Logistics & Storage</h3>
+                <p>
+                    Marine logistics, fuel storage, and transportation.
+                </p>
+            </div>
+        </section>
     </section>
+</main>
 
-    <!-- FOOTER INCLUDE -->
+<!-- Footer dynamically loaded -->
 <div id="footer"></div>
-
-<script>
-/* Load header & footer (PHP include replacement) */
-fetch("header.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("header").innerHTML = data);
-
-fetch("footer.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("footer").innerHTML = data);
-</script>
 
 </body>
 </html>
-
-
