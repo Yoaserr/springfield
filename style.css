@@ -26,9 +26,6 @@ header {
   position: relative;
   z-index: 1000;
 }
-nav {
-  position: static;
-}
 
 .logo img {
   height: 50px;
@@ -322,4 +319,5 @@ nav {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+
 
