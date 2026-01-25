@@ -189,6 +189,112 @@ header {
     padding: 20px;
   }
 }
+
+/* ============================= */
+/* PROJECTS PAGE BACKGROUND */
+/* ============================= */
+
+.projects-page {
+    background: url("spring.jpg") center / cover no-repeat fixed;
+    padding: 60px 0;
+    position: relative;
+    color: #fff;
+
+}
+
+/* Dark overlay */
+.projects-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+/* Keep content above overlay */
+.projects-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+.projects-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 0 40px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 40px 60px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+    color: #0b2c4d;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #444;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .projects-intro {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .projects-grid {
+        padding: 0 20px 40px;
+    }
+}
+
+.about-section {
+    background: linear-gradient(
+        rgba(11, 44, 77, 0.85),
+        rgba(11, 44, 77, 0.85)
+    ),
+    url("hero.jpg") center/cover no-repeat;
+
+    padding: 100px 40px;
+    color: #fff;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+.about-content p {
+    line-height: 1.8;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.about-content h3 {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #f0c040;
+}
 .contact-section {
     padding: 100px 20px;
     background: linear-gradient(
@@ -303,4 +409,5 @@ header {
     width: 100%;
     border-radius: 10px;
 }
+
 
