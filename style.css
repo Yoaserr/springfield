@@ -182,6 +182,13 @@ header {
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
+.services-list {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px 40px;
+}
+
+
 @media (max-width: 768px) {
   .services-preview,
   .services-list {
@@ -462,3 +469,4 @@ header {
 nav a.active {
     border-bottom: 3px solid #f4a100;
 }
+
