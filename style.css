@@ -41,7 +41,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: #0b2c4d;
+  background: black;
   color: #fff;
   position: relative;
   z-index: 1000;
@@ -490,5 +490,6 @@ header {
 nav a.active {
     border-bottom: 3px solid #f4a100;
 }
+
 
 
