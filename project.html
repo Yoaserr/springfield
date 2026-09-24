@@ -1,86 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - Springfield Ltd</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Our Projects | Springfield Ltd</title>
+
+    <meta name="description"
+        content="Explore Springfield Ltd projects across upstream energy operations, petroleum storage and marine logistics in Ghana and West Africa.">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Springfield V2 Styles -->
+    <link rel="stylesheet" href="style-v2.css">
+
+    <!-- Main Script -->
+    <script src="script.js" defer></script>
 </head>
-<body>
 
-    <!-- Header content (from header.php) -->
-    <header>
-  <div class="logo">
-    <a href="index.html">
-      <img src="logo.jpg" alt="Springfield Logo">
-    </a>
-  </div>
-<nav>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="project.html">Projects</a></li>
-    <li><a href="team.html">Our Team</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-  <div class="hamburger">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-</header>
+<body class="projects-v2-page">
 
-    <!-- Projects Page Content -->
-    <div class="projects-page">
+    <!-- HEADER -->
+    <div id="header"></div>
 
-        <section class="page-header">
-            <h1>Our Projects</h1>
-        </section>
+    <main>
 
-        <section class="projects-intro">
-            <p>
-                We have successfully executed major upstream and downstream
-                projects across Ghana and the West African sub-region.
-            </p>
-        </section>
+        <!-- =========================================
+             PROJECTS HERO
+        ========================================== -->
+        <section class="projects-v2-hero">
 
-        <section class="projects-grid">
-            <div class="project-card reveal">
-                <h3>Offshore Oil Exploration</h3>
-                <p>Deep-water exploration and production operations in Ghana.</p>
+            <div class="projects-v2-hero-overlay"></div>
+            <div class="projects-v2-hero-grid"></div>
+
+            <div class="container projects-v2-hero-container">
+
+                <div class="projects-v2-hero-content">
+
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span>Our Projects</span>
+                    </div>
+
+                    <h1>
+                        Energy in action.
+                        <span>Projects with purpose.</span>
+                    </h1>
+
+                    <p>
+                        Project experience spanning upstream operations,
+                        petroleum storage and marine logistics across
+                        Ghana and the West African sub-region.
+                    </p>
+
+                </div>
+
+                <div class="projects-v2-hero-marker">
+
+                    <span>03</span>
+
+                    <p>
+                        Project<br>
+                        Areas
+                    </p>
+
+                </div>
+
             </div>
 
-            <div class="project-card reveal">
-                <h3>Fuel Storage Terminal – Tema</h3>
-                <p>High-capacity petroleum storage and distribution facility.</p>
+            <div class="projects-v2-hero-bottom">
+
+                <div class="container">
+
+                    <span>Springfield Ltd</span>
+
+                    <div class="projects-v2-hero-categories">
+
+                        <span>Upstream</span>
+
+                        <i class="fa-solid fa-circle"></i>
+
+                        <span>Storage</span>
+
+                        <i class="fa-solid fa-circle"></i>
+
+                        <span>Marine Logistics</span>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="project-card reveal">
-                <h3>Marine Logistics – Takoradi</h3>
-                <p>Offshore supply, marine transport, and vessel support services.</p>
-            </div>
         </section>
 
-    </div>
 
-    <!-- FOOTER INCLUDE -->
-<div id="footer"></div>
+        <!-- =========================================
+             PROJECTS INTRODUCTION
+        ========================================== -->
+        <section class="projects-v2-intro">
 
-<script>
-/* Load header & footer (PHP include replacement) */
-fetch("header.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("header").innerHTML = data);
+            <div class="container projects-v2-intro-grid">
 
-fetch("footer.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("footer").innerHTML = data);
-</script>
+                <div class="section-label">
+
+                    <span>01</span>
+                    <p>Project Experience</p>
+
+                </div>
+
+                <div class="projects-v2-intro-content">
+
+                    <p class="section-kicker">
+                        Experience across the sector
+                    </p>
+
+                    <h2>
+                        From offshore operations
+                        <span>to energy infrastructure.</span>
+                    </h2>
+
+                    <div class="projects-v2-intro-copy">
+
+                        <p>
+                            Springfield has executed upstream and
+                            downstream projects across Ghana and the
+                            West African sub-region.
+                        </p>
+
+                        <p>
+                            Our project experience spans offshore oil
+                            exploration, petroleum storage and distribution,
+                            and marine logistics support.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FEATURED PROJECT
+             OFFSHORE EXPLORATION
+        ========================================== -->
+        <section class="project-v2-feature">
+
+            <div class="project-v2-feature-image">
+
+                <img src="hero.jpg"
+                    alt="Offshore oil exploration operations">
+
+                <div class="project-v2-feature-overlay"></div>
+
+                <span class="project-v2-large-number">
+                    01
+                </span>
+
+            </div>
+
+
+            <div class="project-v2-feature-content">
+
+                <div class="project-v2-feature-inner">
+
+                    <div class="project-v2-meta">
+
+                        <span>Featured Project</span>
+
+                        <span class="project-v2-meta-line"></span>
+
+                        <span>Ghana</span>
+
+                    </div>
+
+                    <h2>
+                        Offshore Oil
+                        <span>Exploration.</span>
+                    </h2>
+
+                    <p>
+                        Deep-water exploration and production
+                        operations in Ghana.
+                    </p>
+
+                    <div class="project-v2-detail">
+
+                        <span>Project Area</span>
+
+                        <strong>
+                            Exploration & Production
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PROJECT PORTFOLIO
+        ========================================== -->
+        <section class="project-v2-portfolio">
+
+            <div class="container">
+
+                <div class="project-v2-portfolio-heading">
+
+                    <div class="section-label">
+                        <span>02</span>
+                        <p>Project Portfolio</p>
+                    </div>
+
+                    <div>
+
+                        <p class="section-kicker">
+                            Operational experience
+                        </p>
+
+                        <h2>
+                            Supporting energy
+                            <span>across critical operations.</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-v2-grid">
+
+                    <!-- STORAGE TERMINAL -->
+                    <article class="project-v2-card">
+
+                        <div class="project-v2-card-image">
+
+                            <img src="spring.jpg"
+                                alt="Fuel storage terminal project">
+
+                            <div class="project-v2-card-shade"></div>
+
+                            <span class="project-v2-card-number">
+                                02
+                            </span>
+
+                        </div>
+
+                        <div class="project-v2-card-content">
+
+                            <div class="project-v2-card-meta">
+
+                                <span>Storage & Distribution</span>
+
+                                <span>Tema</span>
+
+                            </div>
+
+                            <h3>
+                                Fuel Storage
+                                Terminal
+                            </h3>
+
+                            <p>
+                                High-capacity petroleum storage and
+                                distribution facility.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- MARINE LOGISTICS -->
+                    <article class="project-v2-card">
+
+                        <div class="project-v2-card-image">
+
+                            <img src="crew.jpg"
+                                alt="Marine logistics project">
+
+                            <div class="project-v2-card-shade"></div>
+
+                            <span class="project-v2-card-number">
+                                03
+                            </span>
+
+                        </div>
+
+                        <div class="project-v2-card-content">
+
+                            <div class="project-v2-card-meta">
+
+                                <span>Marine Logistics</span>
+
+                                <span>Takoradi</span>
+
+                            </div>
+
+                            <h3>
+                                Marine Logistics
+                            </h3>
+
+                            <p>
+                                Offshore supply, marine transport and
+                                vessel support services.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PROJECT AREAS
+        ========================================== -->
+        <section class="project-v2-areas">
+
+            <div class="container">
+
+                <div class="project-v2-areas-heading">
+
+                    <div class="section-label light">
+
+                        <span>03</span>
+                        <p>Project Areas</p>
+
+                    </div>
+
+                    <div>
+
+                        <p class="section-kicker">
+                            Integrated capability
+                        </p>
+
+                        <h2>
+                            Experience across
+                            <span>the energy value chain.</span>
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-v2-areas-grid">
+
+                    <article>
+
+                        <span>01</span>
+
+                        <div class="project-v2-area-icon">
+                            <i class="fa-solid fa-oil-well"></i>
+                        </div>
+
+                        <h3>
+                            Offshore
+                            Exploration
+                        </h3>
+
+                        <p>
+                            Deep-water exploration and
+                            production operations.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>02</span>
+
+                        <div class="project-v2-area-icon">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+
+                        <h3>
+                            Petroleum
+                            Storage
+                        </h3>
+
+                        <p>
+                            Storage and distribution
+                            infrastructure.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>03</span>
+
+                        <div class="project-v2-area-icon">
+                            <i class="fa-solid fa-ship"></i>
+                        </div>
+
+                        <h3>
+                            Marine
+                            Logistics
+                        </h3>
+
+                        <p>
+                            Offshore supply, transport
+                            and vessel support.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PROJECT STATEMENT
+        ========================================== -->
+        <section class="project-v2-statement">
+
+            <div class="container project-v2-statement-inner">
+
+                <span class="project-v2-statement-number">
+                    04
+                </span>
+
+                <div>
+
+                    <p class="section-kicker">
+                        Springfield Projects
+                    </p>
+
+                    <h2>
+                        Delivering across
+                        <span>Ghana and West Africa.</span>
+                    </h2>
+
+                    <p>
+                        Springfield's project experience reflects
+                        capabilities across upstream and downstream
+                        energy operations in Ghana and the West
+                        African sub-region.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CTA
+        ========================================== -->
+        <section class="home-cta projects-v2-cta">
+
+            <div class="container">
+
+                <div class="cta-panel">
+
+                    <div class="cta-decoration"></div>
+
+                    <div class="cta-content">
+
+                        <p class="section-kicker">
+                            Work with Springfield
+                        </p>
+
+                        <h2>
+                            Let's power progress
+                            <span>together.</span>
+                        </h2>
+
+                        <p>
+                            Connect with our team to learn more about
+                            Springfield's projects, services and capabilities.
+                        </p>
+
+                    </div>
+
+                    <a href="/contact" class="btn btn-light">
+
+                        Contact Us
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
 
 </body>
 
 </html>
-
-
